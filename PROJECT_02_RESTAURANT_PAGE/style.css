@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+  background-color: rgba(93, 98, 138, 0.404);
+  backdrop-filter: brightness(0.96) contrast(130%) hue-rotate(201deg)
+    invert(19%) opacity(60%) saturate(300%);
+  overflow: hidden;
+}
+.background {
+  background-image: url("./assets/pexels-maxyne-barcel-10402282\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 99vw;
+  min-height: 98vh;
+  background-position: center;
+  background-color: rgba(93, 98, 138, 0.404);
+  backdrop-filter: brightness(0.96) contrast(130%) hue-rotate(201deg)
+    invert(19%) opacity(60%) saturate(300%);
+}
+
+.bg-color {
+  background-color: rgba(93, 98, 138, 0.404);
+  backdrop-filter: brightness(0.96) contrast(130%) hue-rotate(201deg)
+    invert(19%) opacity(60%) saturate(300%);
+  display: flex;
+  justify-content: center;
+  min-width: 97vw;
+  min-height: 98vh;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 25px;
+  color: #ffc233;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-button {
+  padding-top: 20px;
+}
+
+.nav-button button {
+  width: 150px;
+  height: 35px;
+  border-color: transparent;
+  background-color: #ff505f;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.text h1 {
+  color: #ffc233;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+}
+
+.button-section button {
+  width: 250px;
+  height: 50px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #ff505f;
+  color: white;
+  font-size: 18px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5px;
+  margin-right: 50px;
+}
+
+.text-and-button {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    padding: 5px;
+  }
+  .nav-items {
+    display: none;
+  }
+  .nav-button {
+    display: none;
+  }
+  .scroll {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .content {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  .text-and-button {
+    justify-content: center;
+    height: 100vh;
+  }
+  .background {
+    width: 97vw;
+    height: 100vh;
+  }
+  .bg-color {
+    width: 97vw;
+    height: 100vh;
+  }
+  .text h1 {
+    font-size: 35px;
+  }
+  .scroll-image {
+    height: 100px;
+  }
+}
